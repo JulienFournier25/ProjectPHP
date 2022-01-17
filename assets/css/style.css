@@ -1,0 +1,40 @@
+header {
+    height: 100vh;
+    background-image: url('../img/photo-produit-vin-vigne-0880.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel {
+    height: 90vh;
+}
+
+.carousel img {
+    height: 90vh;
+}
+
+.badge {
+    left: 13%;
+}
+
+@media screen AND (max-width:800px) {
+    .carousel {
+        height: 50vh;
+    }
+    .carousel img {
+        height: 50vh;
+    }
+    .badge {
+        left: 15%;
+    }
+}
+
+@media screen AND (max-width:500px) {
+    .carousel {
+        height: 30vh;
+    }
+    .carousel img {
+        height: 30vh;
+    }
+}
