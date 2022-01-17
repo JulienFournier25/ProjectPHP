@@ -1,8 +1,10 @@
 <?php require_once 'includes/header.php' ?>
 
-<header></header>
 
-<div class="container-fluid bg-danger bg-gradient py-2">
+<header></header>
+<img src="assets/img/photo-produit-vin-vigne-0880.png" class="w-100 image-body" alt="...">
+
+<div class="container bg-danger bg-gradient bg-opacity-75 py-2 rounded aboutIt">
     <div class="row py-1 text-md-start text-center">
         <h2>Présentation du thème</h2>
     </div>
@@ -44,7 +46,10 @@
         </div>
     </div>
 </div>
-<div class="container-fluid py-3 px-5 bg-danger bg-gradient d-grid gap-3">
+
+<img src="assets/img/photo-produit-vin-vigne-0880.png" class="w-100 image-body" alt="...">
+
+<div class="container py-3 px-5 bg-danger bg-gradient bg-opacity-75 d-grid gap-3 aboutIt rounded">
     <div class="row gap-md-4 gap-3">
         <div class="card col-md">
             <div class="card-body">
@@ -77,7 +82,7 @@
             </p>
         </div>
     </div>
-    <div class="row gap-md-5 gap-3">
+    <div class="row gap-md-4 gap-3">
         <div class="card col-md">
             <div class="card-body">
                 <h5 class="card-title">Villeurbane</h5>

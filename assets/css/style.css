@@ -1,40 +1,57 @@
-header {
-    height: 100vh;
-    background-image: url('../img/photo-produit-vin-vigne-0880.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.carousel {
-    height: 90vh;
-}
-
-.carousel img {
-    height: 90vh;
-}
-
-.badge {
-    left: 13%;
-}
-
-@media screen AND (max-width:800px) {
+    header {
+        height: 100vh;
+        background-image: url('../img/photo-produit-vin-vigne-0880.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0px 0px 50px 20px black;
+    }
+    
     .carousel {
-        height: 50vh;
+        height: 90vh;
     }
+    
     .carousel img {
-        height: 50vh;
+        height: 90vh;
     }
+    
     .badge {
-        left: 15%;
+        left: 13%;
     }
-}
-
-@media screen AND (max-width:500px) {
-    .carousel {
-        height: 30vh;
+    
+    .image-body {
+        z-index: -1;
+        position: fixed;
+        top: 0;
     }
-    .carousel img {
-        height: 30vh;
+    
+    .aboutIt {
+        margin-top: 7.5vh;
+        margin-bottom: 7.5vh;
     }
-}
+    
+    @media screen AND (max-width: 800px) {
+        .carousel {
+            height: 50vh;
+        }
+        .carousel img {
+            height: 50vh;
+        }
+        .badge {
+            left: 15%;
+        }
+    }
+    
+    .image-body {
+        height: 100vh;
+        width: auto;
+    }
+    
+    @media screen AND (max-width:500px) {
+        .carousel {
+            height: 30vh;
+        }
+        .carousel img {
+            height: 30vh;
+        }
+    }
