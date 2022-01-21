@@ -1,12 +1,14 @@
+let cleave = new Cleave('#phone', {
+    delimiters: [' '],
+    blocks: [2, 2, 2, 2, 2]
+});
 typeOfVisitor.onchange = () => {
     if (typeOfVisitor.value == 'exposant') {
-        exponentsNameContainer.classList.remove('d-none');
-        typeOfVisitorContainer.classList.remove('col-md-10');
-        typeOfVisitorContainer.classList.add('col-md-5');
+        exponentsContainer.classList.remove('d-none');
+        exponentsImageContainer.classList.remove('d-none');
     } else {
-        exponentsNameContainer.classList.add('d-none');
-        typeOfVisitorContainer.classList.remove('col-md-5');
-        typeOfVisitorContainer.classList.add('col-md-10');
+        exponentsContainer.classList.add('d-none');
+        exponentsImageContainer.classList.add('d-none');
     }
 }
 lastname.onkeydown = () => {
@@ -90,23 +92,23 @@ email.onchange = () => {
         email.classList.add('is-invalid');
     }
 }
-subject.onkeydown = () => {
-    if (subject.value.match(/^([A-Z]{1}){1}([a-z-_. ]+){1}$/)) {
-        subject.classList.remove('is-invalid');
-        subject.classList.add('is-valid');
+phone.onchange = () => {
+    if (phone.value.match(/^[0]{1}[1-79]{1}([ ]{1}[0-9]{2}){4}$/)) {
+        phone.classList.remove('is-invalid');
+        phone.classList.add('is-valid');
     } else {
-        subjectErrors.innerText = 'Veuillez vérifier votre nom d\'exposant';
-        subject.classList.remove('is-valid');
-        subject.classList.add('is-invalid');
+        phoneErrors.innerText = 'Veuillez vérifier votre nom d\'exposant';
+        phone.classList.remove('is-valid');
+        phone.classList.add('is-invalid');
     }
 }
-subject.onchange = () => {
-    if (subject.value.match(/^([A-Z]{1}){1}([a-z-_. ]+){1}$/)) {
-        subject.classList.remove('is-invalid');
-        subject.classList.add('is-valid');
+phone.onkeydown = () => {
+    if (phone.value.match(/^[0]{1}[1-79]{1}([ ]{1}[0-9]{2}){4}$/)) {
+        phone.classList.remove('is-invalid');
+        phone.classList.add('is-valid');
     } else {
-        subjectErrors.innerText = 'Veuillez vérifier votre nom d\'exposant';
-        subject.classList.remove('is-valid');
-        subject.classList.add('is-invalid');
+        phoneErrors.innerText = 'Veuillez vérifier votre nom d\'exposant';
+        phone.classList.remove('is-valid');
+        phone.classList.add('is-invalid');
     }
 }

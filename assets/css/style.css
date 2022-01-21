@@ -7,8 +7,25 @@
         box-shadow: 0px 0px 50px 20px black;
     }
     
+    footer {
+        box-shadow: 0px 0px 50px 20px black;
+    }
+    
+    .btn {
+        transition: 1s ease;
+    }
+    
+    .btn:hover {
+        transform: scale(1.25);
+    }
+    
     .carousel {
         height: 90vh;
+        transition: 1s ease;
+    }
+    
+    .carousel:hover {
+        transform: scale(1.05);
     }
     
     .carousel img {
@@ -23,6 +40,7 @@
         z-index: -1;
         position: fixed;
         top: 0;
+        filter: blur(5px);
     }
     
     .aboutIt {
@@ -30,9 +48,109 @@
         margin-bottom: 7.5vh;
     }
     
+    .content {
+        box-shadow: 0px 0px 50px 20px black, inset 0px 0px 50px 10px black;
+    }
+    
+    .exponents {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    
+    .exponents .exponentsContainer {
+        position: relative;
+        height: 36.5vh;
+        transition: 10s ease;
+        overflow: hidden;
+    }
+    
+    .exponents .exponentsContainer .exponentsImage {
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition: 1s ease;
+        opacity: 1;
+    }
+    
+    .exponents .exponentsContainer .exponentsContent {
+        height: 0;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        transition: 1s ease;
+        opacity: 0;
+    }
+    
+    .exponents .exponentsContainer:hover .exponentsImage {
+        height: 0;
+        opacity: 0;
+    }
+    
+    .exponents .exponentsContainer:hover .exponentsContent {
+        height: 100%;
+        opacity: 1;
+    }
+    
+    .activityContainer {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    
+    .activity {
+        height: 45vh;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .activity .activityImg {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .activity .activityContent {
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        width: 94%;
+        top: 0;
+        left: 3%;
+    }
+    
+    .activity:hover .activityContent {
+        opacity: 1;
+    }
+    
+    .contact #message {
+        height: 20vh;
+        resize: none;
+    }
+    
+    .navFooter {
+        list-style: none;
+    }
+    
+    .navFooter a {
+        color: black;
+    }
+    
+    .navFooter a:hover {
+        font-size: 2rem;
+    }
+    
+    .registerForm {
+        margin-top: 20vh;
+        margin-bottom: 15vh;
+    }
+    
     @media screen AND (max-width: 800px) {
         .carousel {
             height: 50vh;
+            transition: 0s ease;
         }
         .carousel img {
             height: 50vh;
@@ -40,11 +158,13 @@
         .badge {
             left: 15%;
         }
-    }
-    
-    .image-body {
-        height: 100vh;
-        width: auto;
+        .carousel:hover {
+            transform: scale(1);
+        }
+        .image-body {
+            height: 100vh;
+            width: auto;
+        }
     }
     
     @media screen AND (max-width:500px) {
