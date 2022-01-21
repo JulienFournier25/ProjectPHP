@@ -27,12 +27,21 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="assets/img/2016-10-17-salon-vinomedia-villeurbanne006.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>2018</h5>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="assets/img/2016-10-17-salon-vinomedia-villeurbanne028.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>2019</h5>
+                </div>
             </div>
             <div class="carousel-item">
                 <img src="assets/img/2016-10-17-salon-vinomedia-villeurbanne123.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>2020</h5>
+                </div>
             </div>
         </div>
         <div class="d-md-flex d-none">
@@ -82,10 +91,10 @@
             </p>
         </div>
     </div>
-    
+
 </div>
 <div class="container py-3 px-5 d-grid gap-3 aboutIt rounded">
-    
+
     <div class="row gap-md-5 gap-3">
         <div class="card col-md bg-danger bg-gradient bg-opacity-75">
             <div class="card-body">
@@ -104,7 +113,7 @@
                 <p class="card-text">Route de Paris, 49044</p>
             </div>
             <p class="position-absolute top-0  translate-middle badge rounded-pill bg-success bg-gradient">
-            DU 1ER AU 3 AVRIL 2022
+                DU 1ER AU 3 AVRIL 2022
             </p>
         </div>
         <div class="card col-md bg-danger bg-gradient bg-opacity-75">
@@ -114,7 +123,7 @@
                 <p class="card-text">Rue de la Grange aux Bois, 57000</p>
             </div>
             <p class="position-absolute top-0  translate-middle badge rounded-pill bg-success bg-gradient">
-            DU 22 AU 24 AVRIL 2022
+                DU 22 AU 24 AVRIL 2022
             </p>
         </div>
     </div>
